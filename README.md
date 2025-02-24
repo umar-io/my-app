@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Convert Document To Speech
 
-## Getting Started
+A Next.js application that transforms text into natural-sounding speech using advanced AI voices. Ideal for content creators, educators, and anyone needing accessibility solutions.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project provides a simple and intuitive interface for converting text into speech. Users can input text, select a language and voice style, and generate an audio output.  It leverages Clerk for authentication, Shadcn UI components for a modern look and feel, and Supabase for potential backend data storage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to get the project running on your local machine:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone the repository:**
 
-## Learn More
+    ```bash
+    git clone <your-repository-url>
+    cd my-app
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install dependencies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npm install # or yarn install or pnpm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Set up environment variables:**
 
-## Deploy on Vercel
+    Create a `.env` file in the root directory. You'll need to configure Clerk, Supabase, and any other necessary API keys here. Refer to the respective service's documentation for specific instructions.  Example keys you'll likely need:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+    CLERK_SECRET_KEY=your_clerk_secret_key
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.  **Run the development server:**
+
+    ```bash
+    npm run dev # or yarn dev or pnpm dev
+    ```
+
+    Open your browser and navigate to `http://localhost:3000` (or the port specified in your terminal) to view the application.
+
+## Usage
+
+1.  **Enter Text:** Type or paste the text you want to convert into the provided text area on the homepage.
+2.  **Select Options:** Choose your preferred language and voice style using the dropdown menus.
+3.  **Convert:** Click the "Convert" button to generate the speech output.
+
+## Contributing
+
+Contributions are welcome! Here's how you can contribute to the project:
+
+1.  **Fork the repository.**
+2.  **Create a new branch** for your feature or bug fix:
+
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+3.  **Make your changes** and commit them with descriptive messages.
+4.  **Push your changes** to your forked repository.
+5.  **Submit a pull request** to the main branch of the original repository.
+
+## Technologies Used
+
+*   Next.js
+*   React
+*   TypeScript
+*   Tailwind CSS
+*   Clerk (Authentication)
+*   Supabase (Potential Backend)
+*   Shadcn UI (Components)
+*   Lucide React (Icons)
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+[![Built with Dokugen](https://img.shields.io/badge/Built%20with-Dokugen-brightgreen)](https://github.com/samueltuoyo15/Dokugen)
