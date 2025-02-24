@@ -61,23 +61,35 @@ const Page = () => {
             {
               icon: <Mic className="h-12 w-12 text-indigo-600" />,
               title: "Natural Voices",
-              description: "State-of-the-art AI voices that sound incredibly human-like and natural."
+              description:
+                "State-of-the-art AI voices that sound incredibly human-like and natural.",
             },
             {
               icon: <FileText className="h-12 w-12 text-indigo-600" />,
               title: "Multiple Formats",
-              description: "Support for various text formats including TXT, PDF, and DOCX files."
+              description:
+                "Support for various text formats including TXT, PDF, and DOCX files.",
             },
             {
               icon: <Settings2 className="h-12 w-12 text-indigo-600" />,
               title: "Customizable",
-              description: "Adjust speed, pitch, and emphasis to get exactly the voice you need."
-            }
+              description:
+                "Adjust speed, pitch, and emphasis to get exactly the voice you need.",
+            },
           ].map((feature, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="mb-4 p-3 bg-indigo-50 rounded-xl w-fit">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+            <div
+              key={index}
+              className="p-8 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="mb-4 p-3 bg-indigo-50 rounded-xl w-fit">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
@@ -86,7 +98,7 @@ const Page = () => {
       {/* CTA Section */}
       <section className="py-20">
         <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-3xl p-12 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-20"></div>
           <div className="relative z-10">
             <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Give Your Text a Voice?
